@@ -5,6 +5,8 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 $name = $_GET["name"];
 $mail = $_GET["mail"];
 $age = intval($_GET["age"]);
+// se l'input è una stringa, intval restituirà 0 che viene interpretato come un numero dalla condizione "is_int"
+// quindi occorre aggiungere un'altra condizione
 
 
 
